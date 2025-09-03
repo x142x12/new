@@ -9,3 +9,12 @@ engine = create_engine( SQLALCHEMY_DATABASE_URL, connect_args={"check_same_threa
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()
+
+
+
+
+
+# SQLALCHEMY_DATABASE_URL = "sqlite:///bookstore.db"
+
+# engine = create_engine(  f"sqlite:///file:bookstore.db?mode=ro&uri=true", connect_args={"check_same_thread": False} )
+
